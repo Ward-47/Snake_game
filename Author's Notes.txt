@@ -1,0 +1,77 @@
+For this project, I have made a simple Snake game in Python. The first thing I did was 
+import the turtle, time, and random to use the models for my project and use random to 
+make the objects move in different locations during gameplay. Next I wrote a line of code
+that will delay the movement for 0.1 seconds and set both the score and the high score to 
+zero when the user starts the game. 
+
+After that, I have set up the screen, gave it a title, a dark background, set it 
+600x600, and turned off the animations on the screen so that the screen can update. 
+
+Once the overall lay out has been set up, I've created the snake's head (the green circle 
+you will see in the game, set it at the center, and set its direction to stop, so when the
+game starts, the green circle will remain idle until the user makes an input with the 
+arrow keys. 
+
+After that, I have created two more circles appearing both yellow and blue that represent
+the food the snake will eat serving as the main objective for the player to do in order
+to score points and set them both 100 above the y-axis and below respectively. 
+
+Once I have created the circles that will appear in the game, I've then created the 
+segments used for the snake's body, which will be represented with red circles, and they 
+will increment by one every time the user collides with one of the foods in the game. 
+
+After that, I have set up the score, its speed by 0, gave it a white square, which will
+not appear in the game, and set the display of the score on the 260 y-axis. 
+
+While the main objective of the game is for the snake to eat the food to score points, 
+the penalties in the game are that if the snake's head touches its body or collides with 
+the borders, it will count as GAME OVER, to where the segments of the body will be removed
+and the score will be set to zero while the high score still remains the same as of the 
+playthrough. 
+
+To help smooth out the gameplay, I have defined four functions where the player can 
+direct the snake to go up, down, left or right, and in these functions, I have created
+if statements for the go up function saysing if the direction is not down, then go up and
+so on. 
+
+After defining the functions to make the snake go certain directions, I have also 
+defined a function to make it move. In the function, I have created four if statements to
+where they utilize the x and y axis such as if the direction is up or right, it goes up 
+positive twenty on both the x or y-axis respectively and vice versa. After that, I have 
+created the key binding to where the game gets user input from the arrow keys. 
+
+Now that the directional input has been made for the game, I have now created a main loop
+starting with a while loop to display the green circle, then I have nested an if statement
+to register a collision for the borders, and once it happens, all the circles will be 
+back to their original positions at the start of the game. Inside the if statement, I 
+have created a for loop to where the segments representing the snake's body will be moved
+off the screen, putting the user under the impression that the body of the snake has been
+removed but in reality moved off screen. After the game resets, I have also set the score 
+to reset at zero, and then created another line of code that clears the score and the 
+high score as they update so there won't be an overlap that will make the score
+unreadable. 
+
+After creating an if statement for the borders, I have created two more if statements for
+the food collision representing the yellow and blue circles in the game. I have 
+started off the if statements where if the distance between the food and the head is 
+less than 20, then the food will be randomly placed on different positions in the game, 
+and after the snake acquires the food, it will gain a new body segment represented with 
+red circles that will in the same path as the green circle. 
+
+Then within those two if statements for the food, I have created nested if statements
+where if the player score is greater than the high score, then the high score will 
+update.    
+
+After finishing the if statements for the food, I have wrote a for loop that will 
+remove the end segments of the snake's body first in reverse order, an if statement 
+that will move segment 0 to where the head is, and another for loop that checks 
+for head collision with the body segments. 
+
+Within the for loop that checks for the body segments collision, I wrote an if statement
+when the snake's head collides with the body, and within that if statement, I have 
+wrote a foor loop that will hide the body segments by throwing it off screen and then 
+resets the user's score to 0 and update the score display. 
+
+After writing out the for loop, I then wrote one more like of code, that will keep the 
+window open after the game resets allowing the user to keep on playing until he/she
+clicks the close button.   

@@ -1,0 +1,9 @@
+The way you play the game snake is to move the green dot using the arrow keys on your
+keyboard. While moving the green dot, try to have it collide with the yellow and the blue
+dot, both worth ten and twenty points respectively. As you collect the blue or yelow dots,
+your green dot will increment by one red circle at a time representing the body of the
+snake. If you let the green dot touch either the red circles or collide with the 
+boundaries, the game will restart with the red dots removed and the score set to zero
+while the high score will remain unchanged unless the player's next score surpasses it. 
+
+
